@@ -7,12 +7,74 @@ body{
 }
 .show-cart li {
     display: flex;
+    
   }
   .card {
     margin-bottom: 20px;
+    
   }
   .card-img-top {
     width: 200px;
     height: 200px;
     align-self: center;
+  }
+  .h1 {
+    padding:60px;
+    text-align: center;
+    color:orangered;
+    font-size: 30px;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    top: 0;
+    width: 100%
+    float: left;
+  }
+  
+  li {
+    float: left;
+    border-right:1px solid #bbb;
+  }
+  
+  li:last-child {
+    border-right: none;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #111;
+  }
+  
+  .active {
+    background-color: #4CAF50;
+  }
+  .navbar navbar-inverse bg-inverse fixed-top bg-faded{
+    position: fixed;
+  }
+  .w3-content {
+    padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 300px;
+  text-align: center
+  }
+  .h1{
+    padding: 60px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+  font-size: 30px;
+  font-family: Verdana;
   }
