@@ -6,202 +6,81 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/bootstrap.css">
-    <script src="scripts/jquery-3.4.1.js"></script>
-    <script src="scripts/bootstrap.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/scripts.js"></script>
     <title>Pizza</title>
 </head>
 <body>
-    
-
-  <nav class="navbar navbar-inverse bg-inverse fixed-top bg-faded">
-    <div class="row">
-        <div class="col">
-          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cart">Cart (<span class="total-count"></span>)</button><button class="clear-cart btn btn-danger">Clear Cart</button></div>
-          <ul>
-              <li><a class="active" href="#home">Home</a></li>
-              <li><a href="#news">News</a></li>
-              <li><a href="#contact">Contact</a></li>
-              <li style="float:right"><a href="#about">About</a></li>
-            </ul>
-    </div>
-    
-</nav>
-<h1 class="h1">PIZZA HUT</h1>
-<div class="w3-content " style="max-width:900px">
+  <h1 class="header1">MARCO'S PIZZA</h1>
   
-    <img class="mySlides w3-animate-fading" src="img/slide1.jpg" style="width:100%">
-    <img class="mySlides w3-animate-fading" src="img/slide2.jpg" style="width:100%">
-    <img class="mySlides w3-animate-fading" src="img/slide3.jpg" style="width:100%">
-    <img class="mySlides w3-animate-fading" src="img/slide4.jpg" style="width:100%">
-  </div>
-  <script>
-    var myIndex = 0;
-carousel();
-
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}    
-  x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 2500);    
-}
   </script>
+    <div class="card">
 
-    <div class="row">
-      <div class="col">
-        <div class="card" style="width: 20rem;">
-  <img class="card-img-top" src="img/pizza1.jpeg" alt="Card image cap">
-  <div class="card-block">
-    <h4 class="card-title">Pepparoni Pizza</h4>
-    <p class="card-text">Price: $10</p>
-    <a href="#" data-name="Orange" data-price="1000" class="add-to-cart btn btn-primary">Add to cart</a>
-    <label for="">size</label>
-    <select name="" id="">
-    <option value="">small</option>
-    <option value="">medium</option>
-    <option value="">large</option>
-  </select>
-  <label for="">toppings</label>
-    <select name="" id="">
-    <option value="">Pineapple</option>
-    <option value="">Bacon</option>
-    <option value="">ice flakes</option>
-  </select>
-  <label for="">Crust</label>
-    <select name="" id="">
-    <option value="">gluten free</option>
-    <option value="">crispy</option>
-    <option value="">classic</option>
-  </select>
-  </div>
-</div>
-      </div>
-      <div class="col">
-        <div class="card" style="width: 20rem;">
-  <img class="card-img-top" src="img/pizza2.jpg" alt="Card image cap">
-  <div class="card-block">
-    <h4 class="card-title">Pineapple pizza</h4>
-    <p class="card-text">Price: KES500</p>
-    <a href="#" data-name="Pineapple pizza" data-price="500" class="add-to-cart btn btn-primary">Add to cart</a>
-    <label for="">toppings</label>
-    <select name="" id="">
-    <option value="">Pineapple</option>
-    <option value="">ice flakes</option>
-    <option value="">strawberry</option>
-    
-  </select>
-  <label for="">size</label>
-    <select name="" id="">
-    <option value="">small</option>
-    <option value="">medium</option>
-    <option value="">large</option>
-  </select>
-  <label for="">Crust</label>
-    <select name="" id="">
-    <option value="">classic</option>
-    <option value="">crispy</option>
-    <option value="">gluten free</option>
-  </select>
-  </div>
-</div>
-      </div>
-      <div class="col">
-          <div class="card" style="width: 20rem;">
-    <img class="card-img-top" src="img/pizza3.jpg" alt="Card image cap">
-    <div class="card-block">
-      <h4 class="card-title">Meat Deluxe</h4>
-      <p class="card-text">Price: KES500</p>
-      <a href="#" data-name="Meat Deluxe" data-price="500" class="add-to-cart btn btn-primary">Add to cart</a>
-      <label for="">toppings</label>
-      <select name="" id="">
-      <option value="">bacon</option>
-      <option value="">strawberry</option>
-      <option value="">ice flakes</option>
-    </select>
-    <label for="">size</label>
-      <select name="" id="">
-      <option value="">small</option>
-      <option value="">medium</option>
-      <option value="">large</option>
-    </select>
-    <select>
-    <label for="">size</label>
-      <select name="" id="">
-      <option value=""></option>
-      <option value=""></option>
-      <option value=""></option>
-  </select>
     </div>
-  </div>
-        </div>
-      <div class="col">
-        <div class="card" style="width: 20rem;">
-  <img class="card-img-top" src="img/pizza3.jpg" alt="Card image cap">
-  <div class="card-block">
-    <h4 class="card-title">Hawaian Pizza</h4>
-    <p class="card-text">Price: KES500</p>
-    <a href="#" data-name="Hawaian" data-price="500" class="add-to-cart btn btn-primary">Add to cart</a>
-    <label for="">toppings</label>
-    <select name="" id="">
-    <option value="">bacon</option>
-    <option value="">strawberry</option>
-    <option value="">ice flakes</option>
-  </select>
-  <label for="">size</label>
-    <select name="" id="">
-    <option value="">small</option>
-    <option value="">medium</option>
-    <option value="">large</option>
-  </select>
-  <select>
-  <label for="">size</label>
-    <select name="" id="">
-    <option value=""></option>
-    <option value=""></option>
-    <option value=""></option>
-</select>
-  </div>
-</div>
-      </div>
-    </div>
-</div>
 
+    <div id="card-display">
+
+    </div>
   
- <!-- Modal -->
-<div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <table class="show-cart table">
-          
-        </table>
-        <div>Total price: $<span class="total-cart"></span></div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Order now</button>
-      </div>
+  <div class="cart">
+    <button type="button" class="btn btn-primary">
+         Cart <i class="fa fa-shopping-cart"></i> <span class="badge badge-light">0</span>
+    </button>
+</div>
+
+<div id="mymodal" class="modal">
+<div class="modal-content animate">
+    <span class="close" title="Close Modal">&times;</span>
+    <div id="summary"></div>
+    <div id="form-total">
+        <div class="total"></div>
+        <form id="checkoutForm">
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="pickup" value="pickup">
+                <label class="form-check-label" for="pickup">I will pick up</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="delivery" value="delivery">
+                <label class="form-check-label" for="delivery">I want a Delivery</label>
+            </div>
+            <div class="row my-4 hidden">
+                <div class="col-sm-3">
+                <div class="form-group">
+                    <label for="inlineFormCustomSelectPref">Supported Destinations</label>
+                    <select name="address" id="inlineFormCustomSelectPref" class="form-control custom-select">
+                        <option selected>Choose...</option>
+                        <option value="cbd">KASARANI</option>
+                        <option value="ngongrd">EMBAKASSI</option>
+                        <option value="kiamburd">KAREN</option>
+                        <option value="thikard">HURLIGHUM</option>
+                    </select>
+                </div>
+                </div>
+                <div class="col-sm-3">
+                    <label for="specificAddress">Specific Address</label>
+                    <input type="text" class="form-control" name="specificAddress" id="specificAddress">
+                </div>
+                <div class="col-sm-3">
+                    <label for="phone">Phone Number</label>
+                    <input type="text" class="form-control" name="phone" id="phone" placeholder="2547********">
+                </div>    
+            </div>  
+        </form>
+        <button class="btn btn-warning text-white checkout-btn">CheckOut</button>
     </div>
-  </div>
-</div> 
+</div>
+</div>
+</div>
 
-
-
-
-      
-              
-
-    
+<script>
+let modal = document.querySelector('#mymodal');
+window.onclick = function(e){
+if(e.target == modal){
+    modal.style.display = "none";
+    $('#checkoutForm').trigger('reset');
+}
+}
+</script>
 </body>
 </html>
