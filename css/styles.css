@@ -1,3 +1,4 @@
+
 body{
     background-image: url('../img/background2.jpg');
     background-repeat: no-repeat;
@@ -5,76 +6,158 @@ body{
     background-position: center;
     background-attachment: fixed;
 }
-.show-cart li {
-    display: flex;
-    
-  }
-  .card {
-    margin-bottom: 20px;
-    
-  }
-  .card-img-top {
-    width: 200px;
-    height: 200px;
-    align-self: center;
-  }
-  .h1 {
-    padding:60px;
-    text-align: center;
-    color:orangered;
-    font-size: 30px;
-  }
+  body::-webkit-scrollbar{
+    background:  #DADADA;
+    width: 12px;
+    }
+    body::-webkit-scrollbar-thumb{
+      background-color: rgb(65, 241, 203);
+      border-radius: 25px;
+    }
   
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-    top: 0;
-    width: 100%
-    float: left;
-  }
-  
-  li {
-    float: left;
-    border-right:1px solid #bbb;
-  }
-  
-  li:last-child {
-    border-right: none;
-  }
-  
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  li a:hover:not(.active) {
-    background-color: #111;
-  }
-  
-  .active {
-    background-color: #4CAF50;
-  }
-  .navbar navbar-inverse bg-inverse fixed-top bg-faded{
-    position: fixed;
-  }
-  .w3-content {
-    padding-top: 50px;
-  padding-right: 30px;
-  padding-bottom: 50px;
-  padding-left: 300px;
-  text-align: center
-  }
-  .h1{
-    padding: 60px;
+  .header1{
+    padding: 100px;
   text-align: center;
   background: #1abc9c;
   color: white;
-  font-size: 30px;
-  font-family: Verdana;
+  font-size: 60px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   }
+
+  #card-display{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+  }
+  .card{
+    width: 300px;
+    margin:10px;
+  }
+  .card-img-top{
+    height:200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+ #Big-Mark .card-img-top{
+    background-image: url('../img/pizza7.jpg');
+}
+.card-img-top{
+    background-image: url('../img/pizza8.jpg');
+}
+#Pepperoni.card-img-top{
+    background-image: url('../img/pizza1.jpeg');
+}
+.card-img-top{
+    background-image: url('../img/pizza2.jpg');
+}
+.card-img-top{
+    background-image: url('../img/pizza3.jpg');
+}
+#Frutti-D\'Mare .card-img-top{
+    background-image: url('../img/pizza4.jpeg');
+}
+.price-display,.card-title{
+    display: inline-block;
+}
+
+.price-display{
+    float: right;
+}
+.card-footer{
+  display: flex;
+  flex-direction: column;
+}
+
+.order-btns{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.cart{
+  position: fixed;
+  left:-10px;
+  top:5%;
+  border-radius:0 10px 10px 0;
+  cursor: pointer;
+}
+.cart button{
+  background-color: rgb(65, 235, 241);
+  border: rgb(41, 241, 208);
+}
+/* <------Modal-----> */
+.modal{
+  display:none;
+  position: fixed;
+  z-index:10000;
+  left:0;
+  top:0;
+  width:100%;
+  height:100%;
+  overflow: auto;
+  background-color: rgba(0,0,0);
+  background-color: rgba(0,0,0,.4);
+  padding: 60px;
+}
+.modal-content{
+  background-color: #fefefe;
+  margin:5% auto 15% auto;
+  border:1px solid #888;
+  width:80%;
+}
+.close{
+  position: absolute;
+  right:25px;
+  top:0;
+  color:#000;
+  font-size: 35px;
+  font-weight: bold;
+}
+.close:hover,.close:focus{
+  color:red;
+  cursor: pointer;
+}
+.animate{
+  animation: animatezoom .6s;
+}
+@keyframes animatezoom{
+  from{transform:scale(0)}
+  to{transform:sclae(1)}
+}
+
+/*<------- Summary styling in Modal----> */
+#summary{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+#summary div{
+  padding:10px;
+  width:300px;
+  height:250px;
+}
+#summary p {
+  margin:0;
+  font-size: 15px;
+}
+#summary hr{
+  width:80%;
+}
+.hidden{
+   display:none;
+}
+.checkout-btn{
+   display:block;
+   margin: auto;
+   background-color: rgb(65, 241, 218);
+}
+
+/* check out alert  */
+#alert{
+   position: fixed;
+   top:20%;
+   z-index:50;
+   left:0;
+}
