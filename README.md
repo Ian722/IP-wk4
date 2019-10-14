@@ -1,7 +1,8 @@
 # IP-wk4
-MARCO'S PIZZA
+#MARCO'S PIZZA
 A Pizza restaurant website where customers can make orders online
 Author-Ian Warui
+
 Description
 Marco's Pizza is an online website where customers can order pizza and also get delivery.
 
