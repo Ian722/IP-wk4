@@ -1,13 +1,15 @@
 # IP-wk4
-MARCO'S PIZZA
-A Pizza restaurant website where customers can make orders online
-Author-Ian Warui
+MARCO'S PIZZA.
+A Pizza restaurant website where customers can make orders online.
 
-Description
+AUTHOR.
+Ian Warui.
+
+DESCRIPTION
 Marco's Pizza is an online website where customers can order pizza and also get delivery.
 
-Setup/Installation Requirements
-clone the repository to your local computer
+SETUP.
+Clone the repository to your local computer.
 
 Open the project folder
 
